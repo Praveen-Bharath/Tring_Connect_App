@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/firstFragment"
+        android:icon="@drawable/ic_home_ic_home_filled2x"
+        android:title="" />
+    <item
+        android:id="@+id/secondFragment"
+        android:icon="@drawable/ic_calendar_icon_calendar2x"
+        android:title="" />
+    <item
+        android:id="@+id/thirdFragment"
+        android:icon="@drawable/ic_create_post_icon_create_post2x"
+        android:title="" />
+    <item
+        android:id="@+id/fourthFragment"
+        android:icon="@drawable/ic_folder_view_icon2x"
+        android:title="" />
+    <item
+        android:id="@+id/fifthFragment"
+        android:icon="@drawable/ic_chat_icon_chat2x"
+        android:title="" />
+</menu>

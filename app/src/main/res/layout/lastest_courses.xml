@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="60dp"
+    android:elevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/course_id"
+            android:layout_width="145dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="15dp"
+            android:text="Latest Courses"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="342dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/ic_baseline_more_vert_24" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="67.5dp"
+            tools:listitem="@layout/course_list" />
+
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_below="@id/recyclerview3"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="30dp"
+            android:text="3 hours ago"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/heart_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/recyclerview3"
+            android:layout_marginStart="259dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/ic_heart_icon_heart_filled2x"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/recyclerview3"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="4dp"
+            android:layout_toEndOf="@+id/heart_icon"
+            android:text="210"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/comment_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/recyclerview3"
+            android:layout_marginStart="322dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/ic_comment_icon_comment2x"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/recyclerview3"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="24dp"
+            android:layout_toEndOf="@+id/comment_icon"
+            android:text="50"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/centre_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/time_text"
+            android:layout_marginTop="4dp"
+            android:background="#939598"
+            android:minWidth="0.5dp" />
+
+        <ImageView
+            android:id="@+id/pic1"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_below="@id/centre_line"
+            android:layout_marginStart="23.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/oval2x" />
+
+        <ImageView
+            android:id="@+id/pic2"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_below="@id/centre_line"
+            android:layout_marginStart="-10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/pic1"
+            android:src="@drawable/oval_12x" />
+
+        <ImageView
+            android:id="@+id/pic3"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_below="@id/centre_line"
+            android:layout_marginStart="-10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/pic2"
+            android:src="@drawable/oval_22x" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:layout_below="@id/centre_line"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/pic3"
+            android:text="Liked by KnE and 209 others"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/avatar_pic"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_below="@id/pic1"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="22.5dp"
+            android:src="@drawable/avatar_12x" />
+
+        <EditText
+            android:id="@+id/edit_bar"
+            android:layout_width="296dp"
+            android:layout_height="36dp"
+            android:layout_below="@id/pic1"
+            android:layout_marginTop="22.5dp"
+            android:layout_toEndOf="@id/avatar_pic"
+            android:hint="Add a comment..."
+            android:padding="10dp"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/pic1"
+            android:layout_marginStart="-30dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/edit_bar"
+            android:src="@drawable/ic_send_arrow_icon_right_line_arrow_grey2x" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
