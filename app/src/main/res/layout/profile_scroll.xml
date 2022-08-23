@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="123dp"
-    android:layout_marginTop="48dp"
+    android:layout_marginTop="50dp"
+    android:layout_marginBottom="5dp"
     android:orientation="horizontal">
 
     <ImageView
@@ -12,7 +13,8 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="24dp"
         android:layout_marginBottom="39dp"
-        android:background="@drawable/ic_plus_with_circle_icon_plus_with_circle2x" />
+        android:src="@drawable/ic_plus_with_circle_icon_plus_with_circle2x"
+        />
 
     <ImageView
         android:id="@+id/btn_capture_photo"

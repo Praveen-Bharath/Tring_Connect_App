@@ -20,7 +20,7 @@ class DetailsAdapter(private val dList: List<Details>) :
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val itemsViewModel = dList[position]
-        //holder.profile.setImageResource(itemsViewModel.image)
+        holder.profile.setImageResource(itemsViewModel.image)
         holder.people.text = itemsViewModel.name
        // holder.designation.text = itemsViewModel.content
         //holder.description.text = itemsViewModel.desc
@@ -33,7 +33,7 @@ class DetailsAdapter(private val dList: List<Details>) :
     }
 
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
-        val profile: ImageView = itemView.findViewById(R.id.circle_profile)
+        val profile: ImageView = itemView.findViewById(R.id.middle_picture)
         val people: TextView = itemView.findViewById(R.id.people_name)
         val designation: TextView = itemView.findViewById(R.id.people_designation)
         val description: TextView = itemView.findViewById(R.id.content)

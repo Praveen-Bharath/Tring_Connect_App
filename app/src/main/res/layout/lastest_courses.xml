@@ -156,14 +156,16 @@
             android:layout_toEndOf="@id/avatar_pic"
             android:hint="Add a comment..."
             android:padding="10dp"
-            android:textSize="12sp" />
+            android:background="@drawable/rounded_edittext"
+            android:textSize="12sp"
+            android:layout_marginBottom="10dp"/>
 
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_below="@id/pic1"
             android:layout_marginStart="-30dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="28dp"
             android:layout_toEndOf="@id/edit_bar"
             android:src="@drawable/ic_send_arrow_icon_right_line_arrow_grey2x" />
     </RelativeLayout>
